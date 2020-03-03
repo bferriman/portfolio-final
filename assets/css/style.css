@@ -1,0 +1,37 @@
+#about-me {
+    font-size: 16px;
+    padding: 30px;
+    color: white;
+}
+
+#headshot {
+    background-image: url("../images/headshot.jpg");
+    width: 100%;
+    max-width: 290px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    min-height: 268px;
+}
+
+#contact {
+    font-size: 24px;
+    text-align: right;
+    color: white;
+    min-height: 268px;
+}
+
+a {
+    color: white;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.project-desc {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 36px;
+}
