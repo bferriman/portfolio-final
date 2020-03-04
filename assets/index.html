@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>About | Ben Ferriman</title>
 </head>
@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div id="about-me" class="bg-slate col-lg-6">
                     <p>I am a full stack web developer with a passion for finding solutions to complex problems and the ability to see projects through from concept to completion.  My customer service skills honed in the financial services industry help me understand what clients need, and my experience at a fast-paced start-up in the games industry helps me get it done!  I am proficient in HTML, CSS, Bootstrap, JavaScript, jQuery, and Node.js, and am learning more every day.  Check out my work, and let me know if I can help you too!</p>
@@ -32,12 +32,12 @@
     </header>
 
     <section>
-        <div class="container">
+        <div class="container-lg">
             <div class="row my-3">
-                <div id="proj1img" class="project-image col-md-8">
+                <div id="proj1img" class="project-image col-lg-8">
                     <img src="./assets/images/petspiration.jpg" alt="Screenshot of PetSpiration app" class="img-responsive">
                 </div>
-                <div id="proj1desc" class="project-desc col-md-4">
+                <div id="proj1desc" class="project-desc col-lg-4">
                     <h2>PetSpiration</h2>
                     <p>Are you ready to give up on human companionship but not the fun of a dating app? Then PetSpiration is for you! We'll show you pictures of cats, you tell us whether you like them. Then we'll match you up with adoptable cats near you!</p>
                     <a href="https://bferriman.github.io/pet-spiration/"><button class="btn btn-slate btn-lg">Try It!</button></a>
@@ -45,21 +45,21 @@
                 </div>
             </div>
             <div class="row my-3">
-                <div id="proj2desc" class="project-desc col-md-4">
+                <div id="proj2img" class="project-img col-lg-8 order-lg-last">
+                    <img src="./assets/images/dayplanner.jpg" alt="Screenshot of Day Planner app" class="img-responsive">
+                </div>
+                <div id="proj2desc" class="project-desc col-lg-4 order-lg-first">
                     <h2>Day Planner</h2>
                     <p>Time to get organized! This app lets you schedule and save events. Uses Moment.js to responsively format time and date, and saves your events in Local Storage. Uses DOM manipulation to display state-appropriate button controls.</p>
                     <a href="https://bferriman.github.io/day-planner/"><button class="btn btn-slate btn-lg">Try It!</button></a>
                     <a href="https://github.com/bferriman/day-planner"><button class="btn btn-slate btn-lg"><i class="fab fa-github"></i></button></a>
                 </div>
-                <div id="proj2img" class="project-img col-md-8">
-                    <img src="./assets/images/dayplanner.jpg" alt="Screenshot of Day Planner app" class="img-responsive">
-                </div>
             </div>
             <div class="row my-3">
-                <div id="proj3img" class="project-image col-md-8">
+                <div id="proj3img" class="project-image col-lg-8">
                     <img src="./assets/images/weather.jpg" alt="Screenshot of Weather Dashboard app" class="img-responsive">
                 </div>
-                <div id="proj3desc" class="project-desc col-md-4">
+                <div id="proj3desc" class="project-desc col-lg-4">
                     <h2>Weather Dashboard</h2>
                     <p>Get the current weather as well as the five day forecast, for wherever you are, or wherever you may be going! Uses the OpenWeather API.</p>
                     <a href="https://bferriman.github.io/weather-dashboard/"><button class="btn btn-slate btn-lg">Try It!</button></a>
@@ -67,17 +67,38 @@
                 </div>
             </div>
             <div class="row my-3">
-                <div id="proj4desc" class="project-desc col-md-4">
+                <div id="proj4img" class="project-img col-lg-8 order-lg-last">
+                    <img src="./assets/images/eat-the-burger.jpg" alt="Screenshot of Eat-The-Burger app" class="img-responsive">
+                </div>
+                <div id="proj4desc" class="project-desc col-lg-4 order-lg-first">
                     <h2>Eat-The-Burger</h2>
                     <p>A silly app, but a great way to practice MVC implementation. Create a burger, then eat it! Uses MySQL, Handlebars, Express, and a custom-built ORM.</p>
                     <a href="https://limitless-ocean-97488.herokuapp.com/"><button class="btn btn-slate btn-lg">Try It!</button></a>
                     <a href="https://github.com/bferriman/eat-the-burger"><button class="btn btn-slate btn-lg"><i class="fab fa-github"></i></button></a>
                 </div>
-                <div id="proj4img" class="project-img col-md-8">
-                    <img src="./assets/images/eat-the-burger.jpg" alt="Screenshot of Eat-The-Burger app" class="img-responsive">
+            </div>
+            <div class="row my-3">
+                <div id="proj5img" class="project-image col-lg-8">
+                    <img src="./assets/images/friendango.jpg" alt="Screenshot of Friendango app" class="img-responsive">
+                </div>
+                <div id="proj5desc" class="project-desc col-lg-4">
+                    <h2>Friendango</h2>
+                    <p>No clout, just friends.  Read movie reviews from your friends without the distraction of chasing social media followers.</p>
+                    <a href="https://shrouded-beyond-30999.herokuapp.com/"><button class="btn btn-dark btn-lg">Try It!</button></a>
+                    <a href="https://github.com/grlucy/Friendango"><button class="btn btn-dark btn-lg"><i class="fab fa-github"></i></button></a>
                 </div>
             </div>
-
+            <div class="row my-3">
+                <div id="proj6img" class="project-img col-lg-8 order-lg-last">
+                    <img src="./assets/images/emp-template.jpg" alt="Screenshot of Employee Template app" class="img-responsive">
+                </div>
+                <div id="proj6desc" class="project-desc col-lg-4 order-lg-first">
+                    <h2>Employee Template</h2>
+                    <p>A Node CLI for entering employee data for a software development team.  When done, it generates a styled HTML page to display your team.</p>
+                    <a href="https://github.com/bferriman/employee-template"><button class="btn btn-dark btn-lg">Try It!</button></a>
+                    <a href="https://github.com/bferriman/employee-template"><button class="btn btn-dark btn-lg"><i class="fab fa-github"></i></button></a>
+                </div>
+            </div>
         </div>
     </section>
 
