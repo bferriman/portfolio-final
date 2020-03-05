@@ -1,11 +1,11 @@
 // Requiring necessary npm packages
-var express = require("express");
+const express = require("express");
 // Set Handlebars.
-var exphbs = require("express-handlebars");
+const exphbs = require("express-handlebars");
 // require projects data json file
 
 // Setting up port and requiring models for syncing
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // Creating express app and configuring middleware needed for authentication
 const app = express();
@@ -18,7 +18,8 @@ app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
   console.log("GET request received");
-  const projects = {};
+  const projects = require("./projects.js");
+  console.log(projects);
   res.render("index", projects);
 });
 
