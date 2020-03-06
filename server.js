@@ -17,10 +17,17 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
-  console.log("GET request received");
-  const projects = require("./projects.js");
-  console.log(projects);
-  res.render("index", projects);
+  const data = require("./projects.js");
+  data.projects.sort( (a, b) => a.order - b.order);
+  for(let i = 0; i < data.projects.length; i++) {
+    if(i % 2 === 0) {
+      data.projects[i].reversed = false;
+    }
+    else {
+      data.projects[i].reversed = true;
+    }
+  }
+  res.render("index", data);
 });
 
 // Syncing our database and logging a message to the user upon success
