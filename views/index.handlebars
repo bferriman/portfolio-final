@@ -1,0 +1,32 @@
+<header>
+    <div class="container-lg">
+        <div class="row">
+            <div id="about-me" class="bg-slate col-lg-6">
+                <p>I am a full stack web developer with a passion for finding solutions to complex problems and the ability to see projects through from concept to completion.  My customer service skills honed in the financial services industry help me understand what clients need, and my experience at a fast-paced start-up in the games industry helps me get it done!  I am proficient in HTML, CSS, Bootstrap, JavaScript, jQuery, and Node.js, and am learning more every day.  Check out my work, and let me know if I can help you too!</p>
+            </div>
+            <div id="headshot" class="bg-slate col-sm-6 col-lg-3">
+
+            </div>
+            <div id="contact" class="bg-slate col-sm-6 col-lg-3">
+                <a href="mailto:bjf216@gmail.com"><p>bjf216@gmail.com <i class="fas fa-envelope"></i></p></a>
+                <p>303-827-6224 <i class="fas fa-phone"></i></p>
+                <a href="/files/resume.pdf"><p>Resume <i class="fas fa-file"></i></p></a>
+                <a href="https://github.com/bferriman"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ben-ferriman/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container-lg">
+      {{#each projects}}
+      {{> project-block}}
+      {{/each}}
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/b76a162850.js" crossorigin="anonymous"></script>
+<script src="assets/scripts/projects.js"></script>
+<script src="assets/scripts/script.js"></script>
