@@ -46,6 +46,10 @@ a {
     color: white;
 }
 
+.project-image {
+    box-shadow: 1px 4px 5px 2px #777777;
+}
+
 .img-responsive {
     width: 100%;
     height: auto;
