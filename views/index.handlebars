@@ -21,11 +21,7 @@
 <section>
     <div class="container-lg">
       {{#each projects}}
-        {{#if reversed}}
-          {{> project-reverse-block}}
-        {{else}}
-          {{> project-block}}
-        {{/if}}
+        {{> project-block}}
       {{/each}}
     </div>
 </section>
