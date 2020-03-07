@@ -22,16 +22,18 @@ app.get("/", (req, res) => {
 });
 
 app.get("/portfolio", (req, res) => {
-  const data = require("./data/projects.js");
-  data.projects.sort( (a, b) => a.order - b.order);
-  for(let i = 0; i < data.projects.length; i++) {
+  const data = require("./data/personal.js");
+  const projectData = require("./data/projects.js");
+  projectData.projects.sort( (a, b) => a.order - b.order);
+  for(let i = 0; i < projectData.projects.length; i++) {
     if(i % 2 === 0) {
-      data.projects[i].reversed = false;
+      projectData.projects[i].reversed = false;
     }
     else {
-      data.projects[i].reversed = true;
+      projectData.projects[i].reversed = true;
     }
   }
+  data.projects = projectData.projects;
   res.render("portfolio", data);
 });
 
