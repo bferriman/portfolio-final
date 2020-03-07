@@ -46,7 +46,7 @@ a {
     color: white;
 }
 
-.project-image {
+.image-shadow {
     box-shadow: 1px 4px 5px 2px #777777;
 }
 
@@ -56,6 +56,12 @@ a {
 }
 
 .project-desc {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.about-me {
     padding: 30px;
     font-size: 18px;
     line-height: 36px;

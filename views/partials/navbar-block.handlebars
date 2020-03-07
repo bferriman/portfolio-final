@@ -1,18 +1,18 @@
 <header>
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-lg">
-            <a class="navbar-brand" href="#">Ben Ferriman</a>
+            <a class="navbar-brand" href="/">Ben Ferriman</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarLinks">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Portfolio <span class="sr-only">(current)</span></a>
+                <li id="about-me-item" class="nav-item">
+                    <a id="about-me-link" class="nav-link" href="/">About Me</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About Me</a>
+                <li id="portfolio-item" class="nav-item">
+                    <a id="portfolio-link" class="nav-link" href="/portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/bferriman" target="_blank"><i class="fab fa-github"></i></a>
@@ -25,14 +25,3 @@
         </div>
     </nav>
 </header>
-
-<section>
-    <div class="container-lg">
-      {{#each projects}}
-        {{> project-block}}
-      {{/each}}
-    </div>
-</section>
-
-<script src="https://kit.fontawesome.com/b76a162850.js" crossorigin="anonymous"></script>
-

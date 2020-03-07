@@ -18,7 +18,7 @@
     </div>
 </header> --}}
 
-<header>
+{{!-- <header>
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-lg">
             <a class="navbar-brand" href="#">Ben Ferriman</a>
@@ -28,7 +28,7 @@
 
             <div class="collapse navbar-collapse" id="navbarLinks">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/">Portfolio</a>
                 </li>
                 <li class="nav-item active">
@@ -44,12 +44,30 @@
             </div>
         </div>
     </nav>
-</header>
+</header> --}}
+{{> navbar-block}}
 
 <section>
     <div class="container-lg">
-      Howdy
+        <div class="row my-5 mx-1">
+            <div class="d-none d-sm-block col-lg-5 px-0">
+                <div class="image-shadow">
+                    <img src="{{photo}}" alt="Headshot" class="img-responsive">
+                </div>
+            </div>
+            <div class="about-me col-lg-7">
+                <div id="bio">
+                    <p>{{bio}}</p>
+                </div>
+                <div id="info">
+                    <div class="d-inline"><button class="btn btn-slate btn-lg"><i class="fas fa-phone"></i> {{phone}}</button></div>
+                    <div class="d-inline"><a href="mailto:{{email}}"><button class="btn btn-slate btn-lg"><i class="fas fa-envelope"></i> {{email}}</button></a></div>
+                    <div class="d-inline"><a href="{{resume}}"><button class="btn btn-slate btn-lg"><i class="fas fa-file"></i> Resume</button></a></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <script src="https://kit.fontawesome.com/b76a162850.js" crossorigin="anonymous"></script>
+<script src="/js/about.js"></script>

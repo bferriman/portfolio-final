@@ -17,6 +17,11 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
+  const data = require("./data/personal.js");
+  res.render("about", data);
+});
+
+app.get("/portfolio", (req, res) => {
   const data = require("./data/projects.js");
   data.projects.sort( (a, b) => a.order - b.order);
   for(let i = 0; i < data.projects.length; i++) {
@@ -27,13 +32,8 @@ app.get("/", (req, res) => {
       data.projects[i].reversed = true;
     }
   }
-  res.render("index", data);
+  res.render("portfolio", data);
 });
-
-app.get("/about", (req, res) => {
-  const data = require("./data/personal.js");
-  res.render("about", data);
-})
 
 // Syncing our database and logging a message to the user upon success
 app.listen(PORT, function() {
