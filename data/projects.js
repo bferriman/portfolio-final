@@ -5,7 +5,7 @@ module.exports = {
       order: 1,
       description: "No clout, just friends.  Read movie reviews from your friends without the distraction of chasing social media followers.",
       screenshot: "/images/friendango.jpg",
-      deployedURL: "https://shrouded-beyond-30999.herokuapp.com/",
+      deployedURL: "https://friendango.herokuapp.com",
       githubURL: "https://github.com/grlucy/Friendango"
     },  
     {
